@@ -6,8 +6,7 @@ using namespace std;
 
 int main()
 {
-    const vector<string> names = { u8"鲁鲁庭勇",u8"连长",u8"鲁庭勇", u8"邓佳川",u8"陈新杰",u8"邓邓佳川", u8"邓佳川鲁庭勇",
-                                   u8"华为客服", u8"胡H杨Y", u8"胡HY杨", u8"GU邓佳SHU川",u8"邓佳SHU川",u8"胡杨"};
+    const vector<string> names = { u8"成都",u8"重庆",u8"成都重庆"};
 
     string key;
     cout << "Input to search: ";
