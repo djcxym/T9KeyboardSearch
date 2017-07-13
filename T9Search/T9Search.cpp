@@ -2,12 +2,10 @@
 #include<string>
 #include<vector>
 #include"../Converter/Converter.hpp"
-#include"T9SearchHelper.hpp"
 
 bool T9Search::Search(const std::string& name, const std::string& key, std::string& hilight)
 {
-    T9SearchHelper helper(name);
-    std::vector<std::vector<PBCodeUnit>> cusOfAll = helper.SplitNameIntoCodeUnits();
+    std::vector<std::vector<PBCodeUnit>> cusOfAll = Converter::ConvertString2CodeUnits(name);
 
     for (size_t i = 0; i < cusOfAll.size(); i++)
     {
